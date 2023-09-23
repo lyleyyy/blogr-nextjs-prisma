@@ -10,10 +10,8 @@ export default authHandler;
 const options = {
   providers: [
     GitHubProvider({
-      // clientId: process.env.GITHUB_ID,
-      clientId: "09f6bb41cdc39ad9f432",
-      // clientSecret: process.env.GITHUB_SECRET,
-      clientSecret: "acc2df79fd2789aadaa8ca635a71c70b3bd758da",
+      clientId: process.env.GITHUB_ID,
+      clientSecret: process.env.GITHUB_SECRET,
     }),
   ],
   adapter: PrismaAdapter(prisma),
